@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272EC5521E4A372D0002AAF0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272EC5511E4A372D0002AAF0 /* LoginViewController.swift */; };
+		2747AF31F544F6A859A3D1F3 /* Pods_UniCastle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10508CA22D8D6243ACC51B82 /* Pods_UniCastle.framework */; };
 		277280FA1E462F0D00FB487F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277280F91E462F0D00FB487F /* AppDelegate.swift */; };
 		277280FC1E462F0D00FB487F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277280FB1E462F0D00FB487F /* ViewController.swift */; };
 		277280FF1E462F0D00FB487F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277280FD1E462F0D00FB487F /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0313D9384ABF10F476CD5D8E /* Pods-UniCastle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniCastle.release.xcconfig"; path = "Pods/Target Support Files/Pods-UniCastle/Pods-UniCastle.release.xcconfig"; sourceTree = "<group>"; };
+		10508CA22D8D6243ACC51B82 /* Pods_UniCastle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniCastle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		272EC5511E4A372D0002AAF0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		277280F61E462F0D00FB487F /* UniCastle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniCastle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277280F91E462F0D00FB487F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		277280FB1E462F0D00FB487F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		277281001E462F0D00FB487F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		277281031E462F0D00FB487F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		277281051E462F0D00FB487F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344E315DFA6DB908FA0C15E1 /* Pods-UniCastle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniCastle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UniCastle/Pods-UniCastle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2747AF31F544F6A859A3D1F3 /* Pods_UniCastle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				277280F81E462F0D00FB487F /* UniCastle */,
 				277280F71E462F0D00FB487F /* Products */,
+				61501B213BD0CCA6368FDE05 /* Pods */,
+				A27FA136B60758ED71D0702F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				277281001E462F0D00FB487F /* Assets.xcassets */,
 				277281021E462F0D00FB487F /* LaunchScreen.storyboard */,
 				277281051E462F0D00FB487F /* Info.plist */,
+				272EC5511E4A372D0002AAF0 /* LoginViewController.swift */,
 			);
 			path = UniCastle;
+			sourceTree = "<group>";
+		};
+		61501B213BD0CCA6368FDE05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				344E315DFA6DB908FA0C15E1 /* Pods-UniCastle.debug.xcconfig */,
+				0313D9384ABF10F476CD5D8E /* Pods-UniCastle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A27FA136B60758ED71D0702F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10508CA22D8D6243ACC51B82 /* Pods_UniCastle.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 277281081E462F0D00FB487F /* Build configuration list for PBXNativeTarget "UniCastle" */;
 			buildPhases = (
+				3DCA171319133727639055CE /* [CP] Check Pods Manifest.lock */,
 				277280F21E462F0D00FB487F /* Sources */,
 				277280F31E462F0D00FB487F /* Frameworks */,
 				277280F41E462F0D00FB487F /* Resources */,
+				C1D92D0E248AF90AC2573FAB /* [CP] Embed Pods Frameworks */,
+				FBED44896803DE2BC2DCE907 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,11 +162,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3DCA171319133727639055CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1D92D0E248AF90AC2573FAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UniCastle/Pods-UniCastle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBED44896803DE2BC2DCE907 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UniCastle/Pods-UniCastle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		277280F21E462F0D00FB487F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272EC5521E4A372D0002AAF0 /* LoginViewController.swift in Sources */,
 				277280FC1E462F0D00FB487F /* ViewController.swift in Sources */,
 				277280FA1E462F0D00FB487F /* AppDelegate.swift in Sources */,
 			);
@@ -257,6 +336,7 @@
 		};
 		277281091E462F0D00FB487F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 344E315DFA6DB908FA0C15E1 /* Pods-UniCastle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A92UW2429U;
@@ -270,6 +350,7 @@
 		};
 		2772810A1E462F0D00FB487F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0313D9384ABF10F476CD5D8E /* Pods-UniCastle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A92UW2429U;
@@ -300,6 +381,7 @@
 				2772810A1E462F0D00FB487F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
