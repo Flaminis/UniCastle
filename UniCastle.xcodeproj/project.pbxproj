@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		272EC5521E4A372D0002AAF0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272EC5511E4A372D0002AAF0 /* LoginViewController.swift */; };
 		2747AF31F544F6A859A3D1F3 /* Pods_UniCastle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10508CA22D8D6243ACC51B82 /* Pods_UniCastle.framework */; };
+		27683E571E4C9AE50023929E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27683E561E4C9AE50023929E /* User.swift */; };
+		27683E591E4C9B060023929E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27683E581E4C9B060023929E /* Constants.swift */; };
+		27683E5C1E4C9C320023929E /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27683E5B1E4C9C320023929E /* AlertHelper.swift */; };
+		27683E5E1E4C9CCD0023929E /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27683E5D1E4C9CCD0023929E /* AppService.swift */; };
+		27683E601E4CA11D0023929E /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27683E5F1E4CA11D0023929E /* Module.swift */; };
+		27683E621E4D13170023929E /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27683E611E4D13170023929E /* Course.swift */; };
 		277280FA1E462F0D00FB487F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277280F91E462F0D00FB487F /* AppDelegate.swift */; };
 		277280FC1E462F0D00FB487F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277280FB1E462F0D00FB487F /* ViewController.swift */; };
 		277280FF1E462F0D00FB487F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277280FD1E462F0D00FB487F /* Main.storyboard */; };
@@ -20,6 +26,12 @@
 		0313D9384ABF10F476CD5D8E /* Pods-UniCastle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniCastle.release.xcconfig"; path = "Pods/Target Support Files/Pods-UniCastle/Pods-UniCastle.release.xcconfig"; sourceTree = "<group>"; };
 		10508CA22D8D6243ACC51B82 /* Pods_UniCastle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniCastle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		272EC5511E4A372D0002AAF0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		27683E561E4C9AE50023929E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		27683E581E4C9B060023929E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		27683E5B1E4C9C320023929E /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		27683E5D1E4C9CCD0023929E /* AppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		27683E5F1E4CA11D0023929E /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		27683E611E4D13170023929E /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		277280F61E462F0D00FB487F /* UniCastle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniCastle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277280F91E462F0D00FB487F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		277280FB1E462F0D00FB487F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +54,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27683E551E4C9ADC0023929E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27683E561E4C9AE50023929E /* User.swift */,
+				27683E581E4C9B060023929E /* Constants.swift */,
+				27683E5F1E4CA11D0023929E /* Module.swift */,
+				27683E611E4D13170023929E /* Course.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		27683E5A1E4C9C260023929E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27683E5B1E4C9C320023929E /* AlertHelper.swift */,
+				27683E5D1E4C9CCD0023929E /* AppService.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		277280ED1E462F0D00FB487F = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +95,8 @@
 		277280F81E462F0D00FB487F /* UniCastle */ = {
 			isa = PBXGroup;
 			children = (
+				27683E5A1E4C9C260023929E /* Supporting Files */,
+				27683E551E4C9ADC0023929E /* Model */,
 				277280F91E462F0D00FB487F /* AppDelegate.swift */,
 				277280FB1E462F0D00FB487F /* ViewController.swift */,
 				277280FD1E462F0D00FB487F /* Main.storyboard */,
@@ -215,7 +249,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27683E621E4D13170023929E /* Course.swift in Sources */,
+				27683E5C1E4C9C320023929E /* AlertHelper.swift in Sources */,
+				27683E591E4C9B060023929E /* Constants.swift in Sources */,
+				27683E5E1E4C9CCD0023929E /* AppService.swift in Sources */,
+				27683E571E4C9AE50023929E /* User.swift in Sources */,
 				272EC5521E4A372D0002AAF0 /* LoginViewController.swift in Sources */,
+				27683E601E4CA11D0023929E /* Module.swift in Sources */,
 				277280FC1E462F0D00FB487F /* ViewController.swift in Sources */,
 				277280FA1E462F0D00FB487F /* AppDelegate.swift in Sources */,
 			);

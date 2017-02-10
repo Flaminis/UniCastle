@@ -6,6 +6,10 @@ target 'UniCastle' do
   use_frameworks!
   pod 'Kanna', '~> 2.1.0'
   pod 'Alamofire'
+  pod 'Parse'
+  pod 'TextFieldEffects'
+  pod 'SCLAlertView'
+
 
   # Pods for UniCastle
 
